@@ -1,0 +1,292 @@
+@font-face {
+    font-family: 'Pixelify';
+    src: url('../Resources/Fonts/PixelifySans-VariableFont_wght.ttf');
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+
+main{
+    padding: 30px;
+}
+header{
+    background-color:#D72638;
+    width: 100%;
+    position: fixed;
+    padding: 0px; 
+    z-index: 2;
+}
+
+header nav a{
+    border-right: 1px solid #FFBA08 ;
+    padding-right: 5px;
+    font-size: 25px;
+    font-family: Pixelify,sans-serif;
+    color: #FFBA08;
+}
+
+header nav a:last-of-type{
+    border-right: unset;
+}
+
+#undertaleLogo{
+    height: 90px;
+    width: 200px;
+}
+
+body{
+    background-color: #090909;
+    color: white;
+}
+footer{
+    background-color: #D72638;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+    padding-top: 30px;
+}
+
+.logos{
+    max-width: 100px;
+    max-height: 100px;
+}
+h1{
+    color: #FFBA08;
+    padding-top: 100px;
+    font-size: 50px;
+}
+
+
+
+h2{
+    font-size: 40px;
+    margin-top: 30px;
+}
+
+
+.home{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.home p{
+    font-size: 20px;
+    padding-right: 10px;
+}
+
+#trailer-undertale{
+    height: 200px;
+    width: 600px;
+}
+
+.home iframe{
+    margin: 0px 50px;
+}
+.home iframe:hover{
+    border: #FF0000 1px solid;
+}
+
+#character-list{
+    display: flex;
+    flex-direction: column;
+}
+
+.charcterDescription{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    
+}
+
+#character-list h2{
+    display: flex;
+    justify-content: center;
+    padding: 30px 0px;    
+}
+
+
+#character-list h2:nth-of-type(1){
+    color: #D72638;
+}
+
+#character-list h2:nth-of-type(2){
+    color: #DDB967;
+}
+
+#character-list h2:nth-of-type(4){
+    color: #591EB7;
+}
+
+#character-list h2:nth-of-type(5){
+    color: #5398BE;
+}
+
+#character-list h2:nth-of-type(6){
+    color: #F45D01;
+}
+
+#character-list h2:nth-of-type(7){
+    color: #00356E;
+}
+
+#character-list h2:nth-of-type(8){
+    color: #FFF70F;
+}
+
+#character-list h2:nth-of-type(9){
+    color: #EF206C;
+}
+
+#character-list h2:nth-of-type(10){
+    color: #FF220C;
+}
+
+#character-list h2:nth-of-type(11){
+    color: #FFE62B;
+}
+
+#character-list h2:nth-of-type(12){
+    color: #FF0000;
+}
+
+#annoyingDog{
+    width: 300px;
+    height: 300px;
+    border: none;
+}
+
+
+#annoying{
+    width: 300px;
+    height: 300px;
+}
+
+#temmie{
+    width: 400px;
+    height: 300px;
+}
+
+.quotes{
+    font-family: Pixelify, sans-serif;
+    font-size: 100px;
+}
+
+.charcterDescription p{
+    display: flex;
+    max-width: 50%;
+    max-height: 100%;
+    margin: 0 10px;
+    font-size: 25px;
+}
+
+.charcterDescription:nth-of-type(even) p{
+    order: 2;
+} 
+
+.imgAndText{
+    display: flex;
+    flex-direction: column;
+    justify-content: right;
+}
+
+.imgAndText img{
+    max-width: 300px;
+    max-height: 300px;
+    object-fit: cover;
+}
+
+.imgAndText p{
+    max-width: 300px;
+    max-height: 300px;
+}
+
+.story{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    font-size: 30px;
+}
+.story p{
+    max-height: 500px;
+    margin-bottom: 20px;
+}
+
+.story img{
+    height: 300px;
+    width: 300px;
+    margin-bottom: 20px;
+}
+
+
+
+#places{
+    font-size: 30px;
+    font-family: Pixelify,sans-serif;
+    color: #FFBA08;
+}
+
+
+.creators{
+    font-size: 20px;
+}
+
+.linksShops{
+    font-family: Pixelify, sans-serif;
+    color: #FFBA08;
+    font-size: 40px;
+}
+
+
+.webs{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    align-content: stretch;
+    width: 100%;
+    margin-bottom: 5vh;
+}
+
+.webs img{
+margin: 10px 0px;
+
+}
+.webs img:hover{
+    border: #FF0000 3px solid;
+    transform: scale(1.1) ;
+}
+
+.form{
+    padding: 20px 0px;
+}
+
+@media (max-width:480px) {
+    header{
+        width: 100%;
+        position:static;
+    }
+
+    header img{
+        display: none;
+    }
+
+    .home{
+        flex-direction: column;
+        align-items: center;
+    }
+    .home iframe:hover{
+        border: none;
+    }
+
+    .charcterDescription:nth-of-type(even) p{
+        order: 1;
+    } 
+    .charcterDescription{
+        flex-direction: column;
+    }
+}
