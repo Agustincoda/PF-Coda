@@ -284,6 +284,10 @@ margin: 10px 0px;
         border: none;
     }
 
+    #trailer-undertale{
+        width: 100%;
+    }
+    
     .charcterDescription:nth-of-type(even) p{
         order: 1;
     } 
