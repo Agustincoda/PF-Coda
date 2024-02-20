@@ -81,6 +81,7 @@ h2{
 #trailer-undertale{
     height: 200px;
     width: 600px;
+    object-fit: cover;
 }
 
 .home iframe{
