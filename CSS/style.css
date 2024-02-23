@@ -245,6 +245,27 @@ h2{
     font-size: 20px;
 }
 
+.creators h1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.creators a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Pixelify,sans-serif;
+    color: #FFBA08;
+    font-size: 40px;
+}
+
+.creators a:hover{
+    border: white 1px solid;
+    font-size: 60px;
+}
+
 .linksShops{
     font-family: Pixelify, sans-serif;
     color: #FFBA08;
@@ -284,6 +305,71 @@ margin: 10px 0px;
 }
 form ul li{
     padding-top: 10px;
+}
+
+.combat-menu {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 8px;
+    }
+    
+.combat-menu img{
+    height: 200px;
+    width: 300px;
+    padding: 0px 10px;
+}    
+.main-stage { 
+        grid-area: 1 / 1 / 3 / 5;
+        border: white 3px solid;
+        margin: 0px 10px;
+    }
+.main-stage p{
+    font-family: Pixelify,sans-serif;
+    font-size: 60px;
+}    
+.stats { 
+        grid-area: 3 / 1 / 4 / 5;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        font-family: Pixelify,sans-serif;
+        font-size: 40px;
+     }
+.stats p {
+    padding: 0px 100px;
+}     
+.fight { grid-area: 4 / 1 / 5 / 2; }
+.act { grid-area: 4 / 2 / 5 / 3; }
+.item { grid-area: 4 / 3 / 5 / 4; }
+.mercy { grid-area: 4 / 4 / 5 / 5; }
+
+#froggit{
+    height: 200px;
+    width: 200px;
+    padding-bottom: 30px;
+}
+
+#combat-body{
+    background-color: black;
+}
+
+.go-to-page{
+    display: flex;
+    color: #FFBA08;
+    font-size: 40px;
+    font-family: Pixelify,sans-serif;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 30px;
+
+}
+
+.go-to-page:hover{
+    border: white 1px solid;
+    font-size: 50px;
 }
 
 @media (max-width:480px) {
