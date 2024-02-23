@@ -46,8 +46,19 @@ footer{
     display: flex;
     flex-direction: column;
     width: 100%;
-    height: auto;
+    height: 250px;
     padding-top: 30px;
+}
+
+footer a{
+    color: #FFBA08;
+    font-family: Pixelify,sans-serif;
+    font-size: 40px;
+    padding: 0px 10px;
+}
+
+footer img{
+    padding: 0px 10px;
 }
 
 .logos{
@@ -262,8 +273,18 @@ margin: 10px 0px;
     transform: scale(1.1) ;
 }
 
-.form{
+.form-to-viewers{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
     padding: 20px 0px;
+}
+
+.form-to-viewers img{
+    width: 300px;
+}
+form ul li{
+    padding-top: 10px;
 }
 
 @media (max-width:480px) {
@@ -290,9 +311,35 @@ margin: 10px 0px;
     }
     
     .charcterDescription:nth-of-type(even) p{
-        order: 1;
+        order: unset;
     } 
     .charcterDescription{
         flex-direction: column;
+        align-items: center;
+    }
+
+    .charcterDescription p{
+        display: flex;
+        max-width: 100%;
+    }
+
+    .imgAndText{
+        padding-top:  30px;
+        justify-content: center;
+    }
+
+
+    .form-to-viewers{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    form ul li{ 
+        padding-top: 5px;
+    }
+    .form-to-viewers img{
+        height: 300px;
+        width: 300px;
     }
 }
