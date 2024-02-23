@@ -9,9 +9,7 @@
 
 
 
-main{
-    padding: 30px;
-}
+
 header{
     background-color:#D72638;
     width: 100%;
@@ -41,19 +39,20 @@ body{
     background-color: #090909;
     color: white;
 }
+
 footer{
     background-color: #D72638;
     display: flex;
     flex-direction: column;
     width: 100%;
-    height: 250px;
+    height: 260px;
     padding-top: 30px;
 }
 
 footer a{
     color: #FFBA08;
     font-family: Pixelify,sans-serif;
-    font-size: 40px;
+    font-size: 30px;
     padding: 0px 10px;
 }
 
