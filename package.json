@@ -1,0 +1,11 @@
+{
+  "name": "undertale-fan-page",
+  "version": "1.0.0",
+  "description": "This is my final project for the Web design course in Coderhouse where i used:\r -HTML\r -CSS",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}
