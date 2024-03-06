@@ -1,0 +1,30 @@
+header{
+    background-color: $primary-red;
+    width: 100%;
+    position: fixed;
+    padding: 0px; 
+    z-index: 2;
+    nav{
+        padding-left: 10px;
+        a{
+            border-right: 1px solid $link-color ;
+            padding-right: 5px;
+            font-size: 25px;
+            font-family: $pixel-font ;
+            color: $link-color;
+            &:last-of-type{
+                border-right: unset;
+            }
+        }
+    }
+    @include media-query-mobile(){
+        width: 100%;
+        position:static;
+    }
+    img{
+        @include media-query-mobile(){
+                display: none; 
+        }
+    }
+
+}

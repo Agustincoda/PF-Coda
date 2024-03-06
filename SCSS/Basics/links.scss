@@ -1,0 +1,20 @@
+.go-to-page{
+    @include flexbox(row,center,center);
+    color: $link-color;
+    font-size: 40px;
+    font-family: $pixel-font;
+    padding-bottom: 30px;
+    &:hover{
+        border: $text-color 1px solid;
+        font-size: 50px;                                                                                                       
+    }
+    @include media-query-mobile(){
+        border: none;
+        font-size: 40px;
+        text-align: center;
+    }    
+}
+
+#bonus-title{
+    color: $primary-red;
+}

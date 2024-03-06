@@ -1,0 +1,42 @@
+
+#pre-webs{
+    text-align: center;
+}
+.webs{
+    @include flexbox(row,space-between,center);
+    flex-wrap: wrap;
+    align-content: stretch;
+    margin-bottom: 5vh;
+    @include media-query-mobile(){
+        @include flexbox(column,center,center);
+    }
+    img{
+        padding-right: 15px;
+        margin: 10px 0px;
+        @include media-query-mobile(){
+            @include flexbox(row,center,center);
+            padding-top: 10px;
+            padding-right: 0px;
+            width: 75%;
+        }
+        &:hover{
+            border: $link-color 3px solid;
+            transform: scale(1.1) ;
+            @include media-query-mobile(){
+                border:none;
+                transform: unset;
+            }
+        }
+    }
+    a{
+        font-family: $pixel-font;
+        color: $link-color;
+        font-size: 40px;
+        padding-left: 15px;
+        @include media-query-mobile(){
+            @include flexbox(column,center,center);
+            text-align: center;
+            padding-left: 0px;
+        }
+    }
+}

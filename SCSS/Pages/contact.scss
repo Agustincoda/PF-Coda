@@ -1,0 +1,21 @@
+.form-to-viewers{
+    @include flexbox(row,space-around,center);
+    padding: 20px 0px;
+    @include media-query-mobile(){
+        @include flexbox(column,center,center);
+    }
+    img{
+        width: 300px;
+        @include media-query-mobile(){
+            height: 250px;
+            width: 50%;
+        }
+    }
+}
+
+form ul li{
+    padding-top: 10px;
+    @include media-query-mobile(){
+        padding-top: 5px;
+    }
+}

@@ -1,0 +1,33 @@
+
+.story{
+    @include flexbox(column,space-between ,center );
+    font-size: 30px;
+    @include media-query-mobile(){
+        @include flexbox(column,center,center);
+    }
+    p{
+        max-height: 500px;
+        margin-bottom: 20px;
+        padding: 5px 20px;
+        text-align: center;
+        @include media-query-mobile(){
+            max-height: 50%;
+        }
+    }
+    img{
+        height: 300px;
+        width: 300px;
+        margin-bottom: 20px;
+        padding: 0px 15px;
+        @include media-query-mobile(){
+            height: 25%;
+            width: 25%;
+        }
+    }
+    #places{
+        @include flexbox(column,center,center);
+        font-size: 30px;
+        font-family: $pixel-font;
+        color: $link-color;
+    }
+}

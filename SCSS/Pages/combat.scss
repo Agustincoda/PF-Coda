@@ -1,0 +1,59 @@
+.combat-menu {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 8px;
+    img{
+        height: 200px;
+        width: 300px;
+        padding: 0px 10px;
+        @include media-query-mobile(){
+            height: 100px;
+            width: 90%;
+            padding: 0px 5px;
+        }
+    }
+    }
+    
+.main-stage { 
+        grid-area: 1 / 1 / 3 / 5;
+        border: $text-color 3px solid;
+        margin: 0px 10px;
+        p{
+            font-family: $pixel-font;
+            font-size: 60px;
+        }
+        @include media-query-mobile(){}
+    }
+    
+.stats { 
+        grid-area: 3 / 1 / 4 / 5;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        font-family: $pixel-font;
+        font-size: 40px;
+        p{
+            padding: 0px 100px;
+        }
+     }
+
+
+#froggit{
+    height: 200px;
+    width: 200px;
+    padding-bottom: 30px;
+}
+
+#combat-body{
+    background-color: black;
+    .fight { grid-area: 4 / 1 / 5 / 2; }
+    .act { grid-area: 4 / 2 / 5 / 3; }
+    .item { grid-area: 4 / 3 / 5 / 4; }
+    .mercy { grid-area: 4 / 4 / 5 / 5; }
+    @include media-query-mobile(){
+        @include flexbox(column,center,center);
+    }
+}

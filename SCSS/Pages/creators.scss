@@ -1,0 +1,32 @@
+
+.creators{
+    @include flexbox(column,center,center);
+    font-size: 20px;
+    p{
+        text-align: center;
+    }
+    h1{
+        @include flexbox(row,center,center);
+        flex-wrap: wrap;
+    }
+    a{
+        @include flexbox(row,center,center);
+        font-family: $pixel-font;
+        color: $link-color;
+        font-size: 40px;
+        &:hover{
+            border: $text-color 1px solid;
+            font-size: 60px;
+        }
+    }
+}
+
+#annoying{
+    width: 300px;
+    height: 300px;
+}
+
+#temmie{
+    width: 400px;
+    height: 300px;
+}
