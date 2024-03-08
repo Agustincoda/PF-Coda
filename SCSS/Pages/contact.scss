@@ -13,9 +13,21 @@
     }
 }
 
-form ul li{
-    padding-top: 10px;
-    @include media-query-mobile(){
-        padding-top: 5px;
+form{
+    
+    ul{
+        list-style-type: none;
+        li{
+            padding-top: 10px;
+            @include media-query-mobile(){
+                padding-top: 5px;
+            }
+        }
+
+        .buttons{
+            @include flexbox (row,space-between,center);
+
+        }
+
     }
 }

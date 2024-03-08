@@ -20,6 +20,7 @@ header{
     @include media-query-mobile(){
         width: 100%;
         position:static;
+        text-align: center;
     }
     img{
         @include media-query-mobile(){

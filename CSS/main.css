@@ -31,6 +31,7 @@ header nav a:last-of-type {
   header {
     width: 100%;
     position: static;
+    text-align: center;
   }
 }
 @media (max-width: 480px) {
@@ -140,6 +141,7 @@ footer .logos {
     border: none;
     font-size: 40px;
     text-align: center;
+    padding: 5px 15px;
   }
 }
 
@@ -176,7 +178,7 @@ footer .logos {
   }
 }
 .home iframe:hover {
-  border: #FF0000 1px solid;
+  border: #FFBA08 1px solid;
 }
 @media (max-width: 480px) {
   .home iframe:hover {
@@ -493,6 +495,9 @@ footer .logos {
   }
 }
 
+form ul {
+  list-style-type: none;
+}
 form ul li {
   padding-top: 10px;
 }
@@ -500,6 +505,12 @@ form ul li {
   form ul li {
     padding-top: 5px;
   }
+}
+form ul .buttons {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .combat-menu {
@@ -531,6 +542,7 @@ form ul li {
   font-family: Pixelify, sans-serif;
   font-size: 60px;
 }
+
 .stats {
   grid-area: 3/1/4/5;
   display: flex;
@@ -542,6 +554,13 @@ form ul li {
 }
 .stats p {
   padding: 0px 100px;
+}
+@media (max-width: 480px) {
+  .stats p {
+    padding: 0px 85px;
+    font-size: 25px;
+    max-width: 50%;
+  }
 }
 
 #froggit {
