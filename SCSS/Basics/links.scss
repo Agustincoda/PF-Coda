@@ -4,14 +4,20 @@
     font-size: 40px;
     font-family: $pixel-font;
     padding-bottom: 30px;
+    text-align: center;
     &:hover{
         border: $text-color 1px solid;
-        font-size: 50px;                                                                                                       
+        font-size: 50px; 
+        @include media-query-mobile(){
+            border: none;
+        }                                                                                                      
     }
+   
+}
+
+.go-to-page a{
     @include media-query-mobile(){
-        border: none;
         font-size: 40px;
-        text-align: center;
         padding: 5px 15px;
     }    
 }

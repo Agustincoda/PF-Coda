@@ -27,14 +27,14 @@ header nav a {
 header nav a:last-of-type {
   border-right: unset;
 }
-@media (max-width: 480px) {
+@media (max-width: 500px) {
   header {
     width: 100%;
     position: static;
     text-align: center;
   }
 }
-@media (max-width: 480px) {
+@media (max-width: 500px) {
   header img {
     display: none;
   }
@@ -56,7 +56,7 @@ h1 {
   font-size: 50px;
   padding: 100px 20px 0px 20px;
 }
-@media (max-width: 480px) {
+@media (max-width: 500px) {
   h1 {
     margin: auto;
     display: flex;
@@ -78,7 +78,7 @@ h2 {
   margin-top: 30px;
   text-align: center;
 }
-@media (max-width: 480px) {
+@media (max-width: 500px) {
   h2 {
     text-align: center;
     font-size: 35px;
@@ -92,7 +92,7 @@ h3 {
 p {
   padding: 5px 10px;
 }
-@media (max-width: 480px) {
+@media (max-width: 500px) {
   p {
     padding: 5px 20px;
     text-align: center;
@@ -131,16 +131,21 @@ footer .logos {
   font-size: 40px;
   font-family: Pixelify, sans-serif;
   padding-bottom: 30px;
+  text-align: center;
 }
 .go-to-page:hover {
   border: white 1px solid;
   font-size: 50px;
 }
-@media (max-width: 480px) {
-  .go-to-page {
+@media (max-width: 500px) {
+  .go-to-page:hover {
     border: none;
+  }
+}
+
+@media (max-width: 500px) {
+  .go-to-page a {
     font-size: 40px;
-    text-align: center;
     padding: 5px 15px;
   }
 }
@@ -149,6 +154,16 @@ footer .logos {
   color: #D72638;
 }
 
+@keyframes fading-in {
+  0% {
+    opacity: 0;
+    transform: translate(-200px, 0);
+  }
+  100% {
+    opacity: 1;
+    transform: translate(0px, 0);
+  }
+}
 .home {
   display: flex;
   flex-direction: row;
@@ -160,7 +175,7 @@ footer .logos {
   padding-right: 10px;
   text-align: justify;
 }
-@media (max-width: 480px) {
+@media (max-width: 500px) {
   .home p {
     text-align: center;
   }
@@ -171,7 +186,7 @@ footer .logos {
   object-fit: cover;
   margin: 0px 50px;
 }
-@media (max-width: 480px) {
+@media (max-width: 500px) {
   .home iframe {
     width: 100%;
     height: 100%;
@@ -180,18 +195,30 @@ footer .logos {
 .home iframe:hover {
   border: #FFBA08 1px solid;
 }
-@media (max-width: 480px) {
+@media (max-width: 500px) {
   .home iframe:hover {
     border: none;
   }
 }
-@media (max-width: 480px) {
+@media (max-width: 500px) {
   .home {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
   }
+}
+
+#toriel-and-frisk {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+#toriel-and-frisk img {
+  width: 50%;
+  animation: fading-in 2s ease-in-out forwards;
 }
 
 #undertaleLogo {
@@ -243,7 +270,7 @@ footer .logos {
 #character-list h2:nth-of-type(12) {
   color: #FF0000;
 }
-@media (max-width: 480px) {
+@media (max-width: 500px) {
   #character-list {
     display: flex;
     flex-direction: column;
@@ -258,7 +285,7 @@ footer .logos {
   justify-content: space-between;
   align-items: center;
 }
-@media (max-width: 480px) {
+@media (max-width: 500px) {
   .character-description {
     display: flex;
     flex-direction: column;
@@ -273,7 +300,7 @@ footer .logos {
   margin: 0px 10px;
   font-size: 25px;
 }
-@media (max-width: 480px) {
+@media (max-width: 500px) {
   .character-description p {
     display: flex;
     flex-direction: row;
@@ -286,7 +313,7 @@ footer .logos {
 .character-description:nth-of-type(even) p {
   order: 2;
 }
-@media (max-width: 480px) {
+@media (max-width: 500px) {
   .character-description:nth-of-type(even) p {
     order: unset;
   }
@@ -308,7 +335,7 @@ footer .logos {
   max-height: 300px;
   font-family: Pixelify, sans-serif;
 }
-@media (max-width: 480px) {
+@media (max-width: 500px) {
   .img-and-text {
     display: flex;
     flex-direction: column;
@@ -325,7 +352,7 @@ footer .logos {
   align-items: center;
   font-size: 30px;
 }
-@media (max-width: 480px) {
+@media (max-width: 500px) {
   .story {
     display: flex;
     flex-direction: column;
@@ -339,7 +366,7 @@ footer .logos {
   padding: 5px 20px;
   text-align: center;
 }
-@media (max-width: 480px) {
+@media (max-width: 500px) {
   .story p {
     max-height: 50%;
   }
@@ -350,7 +377,7 @@ footer .logos {
   margin-bottom: 20px;
   padding: 0px 15px;
 }
-@media (max-width: 480px) {
+@media (max-width: 500px) {
   .story img {
     height: 25%;
     width: 25%;
@@ -420,7 +447,7 @@ footer .logos {
   align-content: stretch;
   margin-bottom: 5vh;
 }
-@media (max-width: 480px) {
+@media (max-width: 500px) {
   .webs {
     display: flex;
     flex-direction: column;
@@ -432,7 +459,7 @@ footer .logos {
   padding-right: 15px;
   margin: 10px 0px;
 }
-@media (max-width: 480px) {
+@media (max-width: 500px) {
   .webs img {
     display: flex;
     flex-direction: row;
@@ -447,7 +474,7 @@ footer .logos {
   border: #FFBA08 3px solid;
   transform: scale(1.1);
 }
-@media (max-width: 480px) {
+@media (max-width: 500px) {
   .webs img:hover {
     border: none;
     transform: unset;
@@ -459,7 +486,7 @@ footer .logos {
   font-size: 40px;
   padding-left: 15px;
 }
-@media (max-width: 480px) {
+@media (max-width: 500px) {
   .webs a {
     display: flex;
     flex-direction: column;
@@ -477,7 +504,7 @@ footer .logos {
   align-items: center;
   padding: 20px 0px;
 }
-@media (max-width: 480px) {
+@media (max-width: 500px) {
   .form-to-viewers {
     display: flex;
     flex-direction: column;
@@ -488,7 +515,7 @@ footer .logos {
 .form-to-viewers img {
   width: 300px;
 }
-@media (max-width: 480px) {
+@media (max-width: 500px) {
   .form-to-viewers img {
     height: 250px;
     width: 50%;
@@ -501,7 +528,7 @@ form ul {
 form ul li {
   padding-top: 10px;
 }
-@media (max-width: 480px) {
+@media (max-width: 500px) {
   form ul li {
     padding-top: 5px;
   }
@@ -525,7 +552,7 @@ form ul .buttons {
   width: 300px;
   padding: 0px 10px;
 }
-@media (max-width: 480px) {
+@media (max-width: 500px) {
   .combat-menu img {
     height: 100px;
     width: 90%;
@@ -555,7 +582,7 @@ form ul .buttons {
 .stats p {
   padding: 0px 100px;
 }
-@media (max-width: 480px) {
+@media (max-width: 500px) {
   .stats p {
     padding: 0px 85px;
     font-size: 25px;
@@ -584,7 +611,7 @@ form ul .buttons {
 #combat-body .mercy {
   grid-area: 4/4/5/5;
 }
-@media (max-width: 480px) {
+@media (max-width: 500px) {
   #combat-body {
     display: flex;
     flex-direction: column;

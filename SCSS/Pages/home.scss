@@ -30,6 +30,16 @@
         
 }
 
+#toriel-and-frisk{
+    @include flexbox(row,center,center);
+}
+
+#toriel-and-frisk img{
+    width: 50%;
+   
+    animation: fading-in 2s ease-in-out forwards;
+}
+
 #undertaleLogo{
     height: 90px;
     width: 200px;
