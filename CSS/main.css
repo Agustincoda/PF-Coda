@@ -5,6 +5,7 @@
 * {
   margin: 0;
   padding: 0;
+  transition: 0.5s ease-in-out;
 }
 
 header {
@@ -456,8 +457,8 @@ footer .logos {
   }
 }
 .webs img {
-  padding-right: 15px;
-  margin: 10px 0px;
+  margin: 10px 15px 10px 0px;
+  border-radius: 20px;
 }
 @media (max-width: 500px) {
   .webs img {
@@ -468,10 +469,12 @@ footer .logos {
     padding-top: 10px;
     padding-right: 0px;
     width: 75%;
+    border-radius: 0px;
   }
 }
 .webs img:hover {
   border: #FFBA08 3px solid;
+  border-radius: 0px;
   transform: scale(1.1);
 }
 @media (max-width: 500px) {

@@ -11,16 +11,18 @@
         @include flexbox(column,center,center);
     }
     img{
-        padding-right: 15px;
-        margin: 10px 0px;
+        margin: 10px 15px 10px 0px;
+        border-radius: 20px;
         @include media-query-mobile(){
             @include flexbox(row,center,center);
             padding-top: 10px;
             padding-right: 0px;
             width: 75%;
+            border-radius: 0px ;
         }
         &:hover{
             border: $link-color 3px solid;
+            border-radius: 0px;
             transform: scale(1.1) ;
             @include media-query-mobile(){
                 border:none;
